@@ -3,12 +3,52 @@
 <!-- 
 	Name: Julie Bittner
 	Date Created: 10/16/2019
-	Most recent revision: 10/18/2019
+	Most recent revision: 10/20/2019
 -->
 
 <html lang="en">
 <head>
 	<title>Julie Bittner's Portfolio</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<style>
+		<!-- Table Style -->
+		caption{
+			font-weight: bold;
+			fonrt-size: 1.2em;
+			margin-bottom: 8px;
+		}
+		table, th, td {
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+		table{
+			width; 90%;
+			margin: auto;
+		}
+		tr{
+			height: 30px;
+		}
+		th{
+			background-color: #546a7b;
+			color: #f2eded;
+		}
+		tr:nth-child(odd){
+			background-color: #e4c3ad;
+		}
+		
+		
+		
+		article img{
+			float:left;
+		}
+		.right-content{
+			float:left;
+		}
+		article{
+			margin-bottom: 16px;
+		}
+	</style>
 </head>
 
 <body>
@@ -19,75 +59,84 @@
 
 	<!-- Need to add links to projects.html, contact.html, and testimonials.html -->
 	<nav>
-		<hr/>
 		<p><a href="projects.html">Projects</a></p>
 		<p><a href="contact.html">Contact</a></p>
 		<p><a href="testimonials.html">Testimonials</a></p>
-		<hr/>
+		<div class="clear-float"></div>
 	</nav>
 
 
 	<section>
-		<article id="about">
+		<article class="border" id="about">
 			<h2><em>About Me</em></h2>
-			<img src="images/me.jpg" alt="Portrait of Julie Bittner" />
+			<img src="images/me.jpg" alt="Portrait of Julie Bittner" width="300"/>
 			<p>Paragraph 1 about me. This text has some <strong>key words</strong> that I want to emphasize.</p>
 			<p>Paragraph 2 with more stuff about me. Here are more <strong>key words</strong> to appear in bold.</p>
+			<div class="clear-float"></div>
 		</article>
 		
-		<article id="experiences">
+		<article id="experience">
 			<h2><em>Past Experiences</em></h2>
-			<img src="images/experience.jpeg" alt="Photograph of poster presentation" />
-			<table>
-				<caption>Employment History</caption>
-				<tr>
-					<th>Years of Employment</th>
-					<th>Title</th>
-					<th>Company</th>
-				</tr>
-				<tr>
-					<td>2019</td>
-					<td>Houskeeping Staff</td>
-					<td>YMCA of the Rockies</td>
-				</tr>
-				<tr>
-					<td>2017-2019</td>
-					<td>Math Tutor</td>
-					<td>Concordia College</td>
-				</tr>
-				<tr>
-					<td>2018</td>
-					<td>Student Researcher</td>
-					<td>Concordia College</td>
-				</tr>
-			</table>
+			<img src="images/experience.jpeg" alt="Photograph of poster presentation" width="300" />
+			<div class="right-content">
+				<table>
+					<caption>Employment History</caption>
+					<thead>
+						<tr>
+							<th>Years of Employment</th>
+							<th>Title</th>
+							<th>Company</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2019</td>
+							<td>Houskeeping Staff</td>
+							<td>YMCA of the Rockies</td>
+						</tr>
+						<tr>
+							<td>2017-2019</td>
+							<td>Math Tutor</td>
+							<td>Concordia College</td>
+						</tr>
+						<tr>
+							<td>2018</td>
+							<td>Student Researcher</td>
+							<td>Concordia College</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>	
+			<div class="clear-float"></div>
 		</article>	
 		
 		<article id="hobbies">
 			<h2><em>Hobbies</em></h2>
-			<img src="images/squaredance.jpg" alt="Photograph of square dancers" />
-			<ul>
-				<li>Activities</li>
-				<ol>
-					<li>Square Dancing</li>
-					<li>Ping-Pong</li>
-					<li>Board Games</li>
-					<li>Puzzels</li>
-				</ol>
-				<li>Books</li>
+			<img src="images/squaredance.jpg" alt="Photograph of square dancers" width="300" />
+			<div class="right-content">
 				<ul>
-					<li>Unbroken</li>
-					<li>The Maze Runner</li>
-					<li>The Angel Experiment</li>
-					<li>Unwind</li>
-				</ul>				
-			</ul>
+					<li>Activities</li>
+					<ol>
+						<li>Square Dancing</li>
+						<li>Ping-Pong</li>
+						<li>Board Games</li>
+						<li>Puzzels</li>
+					</ol>
+					<li>Books</li>
+					<ul>
+						<li>Unbroken</li>
+						<li>The Maze Runner</li>
+						<li>The Angel Experiment</li>
+						<li>Unwind</li>
+					</ul>				
+				</ul>
+			</div>	
+			<div class="clear-float"></div>
 		</article>		
 	</section>	
 
 
 	<footer>
-		<hr/>
 		<p>&copy; 2020 Julie Bittner. All rights reserved.</p>
 	</footer>	
 </body>

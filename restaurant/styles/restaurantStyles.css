@@ -1,0 +1,39 @@
+/*
+Creator: Julie Bittner
+Date created: 10/20/2019
+Date last modified: 10/23/2019
+*/
+
+header, footer{
+	background-color: #2d3142;
+	color: #d8d5db;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+header h1{
+	font-family: 'Cinzel', serif;
+}	
+
+nav{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+nav .btn{
+	background-color: #2d3142;
+	color: #d8d5db;
+}
+
+nav a:visited{
+	color:#b0d7ff;
+}	
+
+nav a:hover{
+	font-weight:bold;
+}	
+
+nav a:active{
+	text-decoration:none;
+}	

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+	Name: Julie Bittner
+	Date Created: 10/18/2019
+	Most recent revision: 10/23/2019
+-->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<title>Menu</title>
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/download/  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<style>
+		main {
+			background-color:#eae8ff;
+			color: #2d3142;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		
+		div.menuItem{
+			text-align:center;
+		}
+		
+		th {
+			text-align: left;
+			border-bottom: 1px solid #2d3142;
+			font-size: 1.5em;
+		}
+		
+		table{
+			border:1px solid #2d3142;
+			border-collapse: collapse;
+			width: 50%;
+		}
+		
+		th,td{
+			color:#2d3142;
+		}
+		
+		table tr:nth-child(odd) {
+			background-color: #adacb5;
+		}
+		
+		h4{
+			font-size:1.5em;
+		}
+		
+
+	</style>
+	
+	<!--For Home Icon-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+
+<body>
+
+<noscript>
+	Note: This webpage is best viewed with javascript enabled
+</noscript>
+
+	<div class="container-fluid">
+		<header>
+			<h1>Lighthouse Harbor Cafe</h1>
+		</header>
+
+		<nav>
+			<a class="btn badge-pill" href="index.html"><div class="home-image"><i class="glyphicon glyphicon-home"></i></div></a>
+			<a class="btn badge-pill" href="menu.html">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a>
+		</nav>
+		
+		<main>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 menuItem">
+					<h4>Burger and Fries</h4>
+					<p>
+						An American Classic! <br />
+						Your choice - with or without cheese <br />
+						Pickle, onion, tomato, and lettuce <br />
+						Served with out famous thick cut french fries <br />
+						$7.95
+					</p>
+				</div>	
+				
+				<div class="col-lg-4 col-md-6 menuItem">
+					<h4>Hot Dog and Chips</h4>
+					<p>
+						A Summer Classic! <br />
+						Your choice - white or wheat bun <br />
+						Relish, mustard, and ketchup <br />
+						Served with our house-made chips <br />
+						$7.95
+					</p>
+				</div>	
+					
+				<div class="col-lg-4 col-md-6 menuItem">	
+					<h4>Italian Sausage and Peppers</h4>
+					<p>	
+						An All-Time Favorite! <br />
+						Your choice - mile or spicy Cole Slaw <br />
+						Served with garlic mashers <br />
+						$10.95  <br />
+						<br>
+							
+					</p>
+				</div>	
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-6 menuItem">
+					<h4>Tenderloin Sandwhich and Chips</h4>
+					<p>
+						Really Hits the Spot! <br />
+						Plain or Seasame Seed Bun <br />
+						Pickle, onion, tomato, and lettuce <br />
+						Served with our house-made chips <br />
+						$8.95 <br />
+						<br>
+					</p>
+				</div>	
+				
+				<div class="col-lg-4 col-md-6 menuItem">
+					<h4>House Salad</h4>
+					<p>
+						On the Lighter Side <br />
+						Your choice- with or without chees <br />
+						Iceberg lettuce, tomatoes, peppers <br />
+						Thousand Island or Ranch Dressing <br />
+						Served with a dinner roll <br />
+						$6.95
+					</p>
+				</div>	
+				
+				<div class="col-lg-4 col-md-6 menuItem">
+					<h4>Brisket Sandwich and Fries</h4>
+					<p>
+						A Taste of Texas! <br />
+						Smoked Brisket on thick-cut Texas Toast <br />
+						Cole Slaw <br />
+						Served with our famouse thick-cut french fries <br />
+						$7.95 <br />
+						<br>
+					</p>
+				</div>	
+			</div>
+			
+			<div class="row">
+				<div class="col-lg">
+					<table>
+						<tr>
+							<th colspan="2">Beverages</th>
+						</tr>
+						
+						<tr>
+							<td>Root Beer</td>
+							<td>$3.00</td>
+						</tr>
+						
+						<tr>
+							<td>Bottled Water</td>
+							<td>$1.25</td>
+						</tr>
+						
+						<tr>
+							<td>Lemonade</td>
+							<td>$1.00</td>
+						</tr>
+						
+						<tr>
+							<td>Iced Tea</td>
+							<td>$1.25</td>
+						</tr>
+					
+					</table>
+				</div>	
+			</div>
+			
+		</main>
+		
+		
+		<footer>
+				<p>745 Grand Ave, Freeport, SC, 29407</p>
+				<p>(802)-573-9684</p>
+		</footer>
+	</div>
+	
+
+</body>
+
+</html>

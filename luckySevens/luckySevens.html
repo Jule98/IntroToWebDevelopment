@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Julie Bittner
+	Date Created: 10/22/2019
+	Most recent revision: 10/23/2019 
+-->
+
+<html lang="en">
+<head>
+	<script type="text/JavaScript" src="luckySevens.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+		
+	<title>Luck Sevens</title>
+</head>
+	
+<body>
+	<div class="container">
+	<h1>Luck Sevens</h1>
+	
+	<form name="luckySevens" onsubmit="return playGame();" onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="startingBet">Starting Bet: $</label>
+                <input type="number" step="0.01" class="form-control" id="startingBet">
+            </div>
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+			<button type="reset" id="resetButton" class="btn" style="display:none;">Play Again</button>
+    </form>
+	
+	<table id="results" class="table table-striped" style="display:none;">
+		<caption>Results</caption>
+            <tr>
+                <td>Starting Bet</td>
+                <td>$<span id="sBet"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="rollCount"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td>$<span id="highestMoney"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td><span id="rollCountHighestMoney"></span></td>
+            </tr>
+    </table>
+		
+	</div>
+	
+</body>
+
+
+</html>
